@@ -6,64 +6,39 @@
 *************************************************************************/
 
 //---------- Interface de la classe <${file_base}> (fichier ${file_name}) ------
-#if ! defined ( DONNEE_H )
-#define DONNEE_H
+#if ! defined ( XXX_H )
+#define XXX_H
 #include <iostream>
-#include "Evenement.h"
+
 //--------------------------------------------------- Interfaces utilisées
 
-//------------------------------------------------------------- Constantes
+//------------------------------------------------------------- Constantes 
 
-//------------------------------------------------------------------ Types
+//------------------------------------------------------------------ Types 
 
-//------------------------------------------------------------------------
+//------------------------------------------------------------------------ 
 // Rôle de la classe <${file_base}>
 //
 //
-//------------------------------------------------------------------------
+//------------------------------------------------------------------------ 
 
-class Donnee
+class Evenement : public
 {
 //----------------------------------------------------------------- PUBLIC
 
 public:
-
 //----------------------------------------------------- Méthodes publiques
-void Lecture (const int capteur);
-    // Mode d'emploi :
-    // lire les valeurs produites par un capteur particulier
-    // Contrat :
-    // aucun
 
-void STATS_C (const int capteur);
-    // Mode d'emploi :
-    // afficher les statistiques de trafic pour un capteur particulier
-    // Contrat :
-    // aucun
+// création de l'amitié avec la classe donnee
+friend void Evenement::Lecture (const int capteur);
 
-void STATS_D7 (const int jour);
-    // Mode d'emploi :
-    // afficher les statistiques de trafic pour les jours de la semaine
-    // Contrat :
-    // aucun
+friend void Evenement::STATS_C (const int capteur);	
 
-void STATS_D7_H24 (const int jour, const int heure);
-    // Mode d'emploi :
-    // afficher les statistiques de trafic pour les jours de la semaine à une heure particulière
-    // Contrat :
-    // aucun
+friend void Evenement::STATS_D7 (const int jour);
 
-void MAX_TS ();
-    // Mode d'emploi :
-    // afficher le moment avec le plus de bouchons
-    // Contrat :
-    // aucun
+friend void Evenement::STATS_D7_H24 (const int jour, const int heure);
 
-int ConversionH (const Evenement event);
-    // Mode d'emploi :
-    // convertir le nombre de secondes en nombre d'heures depuis le debut de la journee
-    // Contrat :
-    // aucun
+friend void Evenement::MAX_TS ();
 
 
 //------------------------------------------------- Surcharge d'opérateurs
@@ -81,19 +56,19 @@ int ConversionH (const Evenement event);
     // Contrat :
     //
 
-    Donnee( );
+    ${file_base} ( );
     // Mode d'emploi :
     //
     // Contrat :
     //
 
-    virtual ~Donnee( );
+    virtual ~${file_base} ( );
     // Mode d'emploi :
     //
     // Contrat :
     //
 
-//------------------------------------------------------------------ PRIVE
+//------------------------------------------------------------------ PRIVE 
 
 protected:
 //----------------------------------------------------- Méthodes protégées
@@ -106,8 +81,15 @@ protected:
 
 private:
 //------------------------------------------------------- Attributs privés
-Evenement * tab;
-const int taille = 20 000 000;
+int id;
+int year;
+int month;
+int day;
+int hour;
+int min;
+int sec;
+int d7;
+char state;
 //---------------------------------------------------------- Classes amies
 
 //-------------------------------------------------------- Classes privées

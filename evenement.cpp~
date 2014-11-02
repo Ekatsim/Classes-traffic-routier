@@ -14,7 +14,7 @@ using namespace std;
 #include <iostream>
 
 //------------------------------------------------------ Include personnel
-#include "Evenement.h"
+#include "evenement.h"
 
 //------------------------------------------------------------- Constantes
 
@@ -27,7 +27,11 @@ using namespace std;
 //-------------------------------------------------------- Fonctions amies
 
 //----------------------------------------------------- Méthodes publiques
-
+// type ${file_base}::Méthode ( liste de paramètres )
+// Algorithme :
+//
+//{
+//} //----- Fin de Méthode
 
 
 //------------------------------------------------- Surcharge d'opérateurs

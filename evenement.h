@@ -9,20 +9,20 @@
 #if ! defined ( EVENEMENT_H )
 #define EVENEMENT_H
 #include <iostream>
-
+#include "Donnee.h"
 //--------------------------------------------------- Interfaces utilisées
 
-//------------------------------------------------------------- Constantes 
+//------------------------------------------------------------- Constantes
 
-//------------------------------------------------------------------ Types 
+//------------------------------------------------------------------ Types
 
-//------------------------------------------------------------------------ 
+//------------------------------------------------------------------------
 // Rôle de la classe <${file_base}>
 //
 //
-//------------------------------------------------------------------------ 
+//------------------------------------------------------------------------
 
-class Evenement : public
+class Evenement
 {
 //----------------------------------------------------------------- PUBLIC
 
@@ -30,16 +30,17 @@ public:
 //----------------------------------------------------- Méthodes publiques
 
 // création de l'amitié avec la classe donnee
-friend void Evenement::Lecture (const int capteur);
+friend void Donnee::Lecture (const int capteur);
 
-friend void Evenement::STATS_C (const int capteur);	
+friend void Donnee::STATS_C (const int capteur);
 
-friend void Evenement::STATS_D7 (const int jour);
+friend void Donnee::STATS_D7 (const int jour);
 
-friend void Evenement::STATS_D7_H24 (const int jour, const int heure);
+friend void Donnee::STATS_D7_H24 (const int jour, const int heure);
 
-friend void Evenement::MAX_TS ();
+friend void Donnee::MAX_TS ();
 
+friend int Donnee::ConversionH(const Evenement event);
 
 //------------------------------------------------- Surcharge d'opérateurs
     ${file_base} & operator = ( const ${file_base} & un${file_base} );
@@ -68,7 +69,7 @@ friend void Evenement::MAX_TS ();
     // Contrat :
     //
 
-//------------------------------------------------------------------ PRIVE 
+//------------------------------------------------------------------ PRIVE
 
 protected:
 //----------------------------------------------------- Méthodes protégées
@@ -82,11 +83,6 @@ protected:
 private:
 //------------------------------------------------------- Attributs privés
 int id;
-int year;
-int month;
-int day;
-int hour;
-int min;
 int sec;
 int d7;
 char state;
