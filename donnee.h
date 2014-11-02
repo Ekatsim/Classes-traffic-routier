@@ -9,20 +9,20 @@
 #if ! defined ( DONNEE_H )
 #define DONNEE_H
 #include <iostream>
-#include "Evenement.h"
+
 //--------------------------------------------------- Interfaces utilisées
 
-//------------------------------------------------------------- Constantes
+//------------------------------------------------------------- Constantes 
 
-//------------------------------------------------------------------ Types
+//------------------------------------------------------------------ Types 
 
-//------------------------------------------------------------------------
+//------------------------------------------------------------------------ 
 // Rôle de la classe <${file_base}>
 //
 //
-//------------------------------------------------------------------------
+//------------------------------------------------------------------------ 
 
-class Donnee
+class Donnee : public 
 {
 //----------------------------------------------------------------- PUBLIC
 
@@ -31,37 +31,31 @@ public:
 //----------------------------------------------------- Méthodes publiques
 void Lecture (const int capteur);
     // Mode d'emploi :
-    // lire les valeurs produites par un capteur particulier
+    // lire les valeurs produites par un capteur particulier 
     // Contrat :
     // aucun
 
-void STATS_C (const int capteur);
+void STATS_C (const int capteur);	
     // Mode d'emploi :
-    // afficher les statistiques de trafic pour un capteur particulier
+    // afficher les statistiques de traffic pour un capteur particulier 
     // Contrat :
     // aucun
 
 void STATS_D7 (const int jour);
     // Mode d'emploi :
-    // afficher les statistiques de trafic pour les jours de la semaine
+    // afficher les statistiques de traffic pour les jours de la semaine 
     // Contrat :
     // aucun
 
 void STATS_D7_H24 (const int jour, const int heure);
     // Mode d'emploi :
-    // afficher les statistiques de trafic pour les jours de la semaine à une heure particulière
+    // afficher les statistiques de traffic pour les jours de la semaine à une heure particulière 
     // Contrat :
     // aucun
 
 void MAX_TS ();
     // Mode d'emploi :
-    // afficher le moment avec le plus de bouchons
-    // Contrat :
-    // aucun
-
-int ConversionH (const Evenement event);
-    // Mode d'emploi :
-    // convertir le nombre de secondes en nombre d'heures depuis le debut de la journee
+    // afficher le moment avec le plus de bouchons 
     // Contrat :
     // aucun
 
@@ -81,19 +75,19 @@ int ConversionH (const Evenement event);
     // Contrat :
     //
 
-    Donnee( );
+    ${file_base} ( );
     // Mode d'emploi :
     //
     // Contrat :
     //
 
-    virtual ~Donnee( );
+    virtual ~${file_base} ( );
     // Mode d'emploi :
     //
     // Contrat :
     //
 
-//------------------------------------------------------------------ PRIVE
+//------------------------------------------------------------------ PRIVE 
 
 protected:
 //----------------------------------------------------- Méthodes protégées
@@ -106,7 +100,7 @@ protected:
 
 private:
 //------------------------------------------------------- Attributs privés
-Evenement * tab;
+evement * tab;
 const int taille = 20 000 000;
 //---------------------------------------------------------- Classes amies
 
