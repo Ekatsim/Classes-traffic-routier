@@ -1,15 +1,17 @@
 /*************************************************************************
                            ${file_base}  -  description
                              -------------------
-    début                : ${date}
+    dÃ©but                : ${date}
     copyright            : (C) ${year} par ${user}
 *************************************************************************/
 
-//---------- Réalisation de la classe <${file_base}> (fichier ${file_name}) --
+//BLABLABLA
+
+//---------- RÃ©alisation de la classe <${file_base}> (fichier ${file_name}) --
 
 //---------------------------------------------------------------- INCLUDE
 
-//-------------------------------------------------------- Include système
+//-------------------------------------------------------- Include systÃ¨me
 using namespace std;
 #include <iostream>
 #include <string>
@@ -20,7 +22,7 @@ using namespace std;
 
 //---------------------------------------------------- Variables de classe
 
-//----------------------------------------------------------- Types privés
+//----------------------------------------------------------- Types privÃ©s
 
 
 //----------------------------------------------------------------- PUBLIC
@@ -245,19 +247,19 @@ void MAX_TS ()
     int heureMax = ConversionH(eveMax);
     int minuteMax = secMax/60 - (jourTemp*24*60 + heureMax*60);
 
-    // on prend le parti que les 1500 capteurs sont actifs au moment évalué
+    // on prend le parti que les 1500 capteurs sont actifs au moment Ã©valuÃ©
     cout << anneeMax << " " << moisMax << " " << jourMax << " " << heureMax << " " << minuteMax << " " << nbRNMax*100/1500 << " " << "%" << endl;
 }
 
-//----------------------------------------------------- Méthodes publiques
-// type ${file_base}::Méthode ( liste de paramètres )
+//----------------------------------------------------- MÃ©thodes publiques
+// type ${file_base}::MÃ©thode ( liste de paramÃ¨tres )
 // Algorithme :
 //
 //{
-//} //----- Fin de Méthode
+//} //----- Fin de MÃ©thode
 
 
-//------------------------------------------------- Surcharge d'opérateurs
+//------------------------------------------------- Surcharge d'opÃ©rateurs
 ${file_base} & ${file_base}::operator = ( const ${file_base} & un${file_base} )
 // Algorithme :
 //
@@ -299,6 +301,6 @@ ${file_base}::~${file_base} ( )
 
 //------------------------------------------------------------------ PRIVE
 
-//----------------------------------------------------- Méthodes protégées
+//----------------------------------------------------- MÃ©thodes protÃ©gÃ©es
 
-//------------------------------------------------------- Méthodes privées
+//------------------------------------------------------- MÃ©thodes privÃ©es
