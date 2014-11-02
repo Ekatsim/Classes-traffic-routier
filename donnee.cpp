@@ -1,15 +1,17 @@
 /*************************************************************************
                            ${file_base}  -  description
                              -------------------
-    début                : ${date}
+    dÃ©but                : ${date}
     copyright            : (C) ${year} par ${user}
 *************************************************************************/
 
-//---------- Réalisation de la classe <${file_base}> (fichier ${file_name}) --
+//BLABLABLA
+
+//---------- RÃ©alisation de la classe <${file_base}> (fichier ${file_name}) --
 
 //---------------------------------------------------------------- INCLUDE
 
-//-------------------------------------------------------- Include système
+//-------------------------------------------------------- Include systÃ¨me
 using namespace std;
 #include <iostream>
 #include <string>
@@ -20,7 +22,7 @@ using namespace std;
 
 //---------------------------------------------------- Variables de classe
 
-//----------------------------------------------------------- Types privés
+//----------------------------------------------------------- Types privÃ©s
 
 
 //----------------------------------------------------------------- PUBLIC
@@ -32,7 +34,7 @@ using namespace std;
 //	{
 //		for (int j=0; (tab[i+j].min*60+ tab[i+j].sec) - (tab[i].min*60+ tab[i].sec)  < 300; j++)  //on regarde les evenements espaces de moins de 5 min
 //		{
-//			if (tab[j].id = tab[j+i].id && tab[i+j].state==NULL)  //etude de l'etat pour un même capteur (valeur absente - capteur non fonctionnel)
+//			if (tab[j].id = tab[j+i].id && tab[i+j].state==NULL)  //etude de l'etat pour un mÃªme capteur (valeur absente - capteur non fonctionnel)
 //			{
 //				tab[i+j].state = tab[i].state;
 //			}
@@ -130,15 +132,15 @@ void STATS_D7 (const int jour)
 
 
 
-//----------------------------------------------------- Méthodes publiques
-// type ${file_base}::Méthode ( liste de paramètres )
+//----------------------------------------------------- MÃ©thodes publiques
+// type ${file_base}::MÃ©thode ( liste de paramÃ¨tres )
 // Algorithme :
 //
 //{
-//} //----- Fin de Méthode
+//} //----- Fin de MÃ©thode
 
 
-//------------------------------------------------- Surcharge d'opérateurs
+//------------------------------------------------- Surcharge d'opÃ©rateurs
 ${file_base} & ${file_base}::operator = ( const ${file_base} & un${file_base} )
 // Algorithme :
 //
@@ -179,6 +181,6 @@ ${file_base}::~${file_base} ( )
 
 //------------------------------------------------------------------ PRIVE
 
-//----------------------------------------------------- Méthodes protégées
+//----------------------------------------------------- MÃ©thodes protÃ©gÃ©es
 
-//------------------------------------------------------- Méthodes privées
+//------------------------------------------------------- MÃ©thodes privÃ©es
